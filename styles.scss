@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+body {
+    background: url("https://media.istockphoto.com/id/1174854848/vector/aircraft-destinations-with-planes-icons-on-blue-background-abstract-seamless-pattern.jpg?s=612x612&w=0&k=20&c=hcj3Eu8HC2JWbliY5CZChDNpGrLNjvZylU-6JidI3IM=");
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 1rem auto;
+    background-color: #e1eef2;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+header {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: -40px;
+}
+
+nav {
+    ul {
+        display: flex;
+
+        li {
+            list-style: none;
+            padding: 1rem;
+            font-size: 2rem;
+            color: rgb(16, 16, 67);
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        li::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background-color: #007bff;
+            transition: width 0.3s ease-in-out;
+        }
+
+        li:hover {
+            color: rgb(76, 165, 190);
+            cursor: pointer;
+
+            transition: color 0.5s ease;
+
+        }
+
+        li:hover::after {
+            width: 100%;
+
+        }
+    }
+}
+
+.title {
+    font-family: 'Belanosima', sans-serif;
+    color: rgb(76, 165, 190);
+    transition: color 2.5s ease;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    background-color: rgb(198, 208, 214);
+    padding: 10px;
+    border-radius: 10px;
+
+    form {
+        display: flex;
+        gap: 10px;
+
+        input {
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        input[type="text"] {
+            background-color: #e1eef2;
+            border: none;
+
+        }
+
+        input[type="submit"] {
+            color: rgb(243, 243, 243);
+            background-color: rgb(76, 165, 190);
+            cursor: pointer;
+            border: none;
+            font-size: 0.8rem;
+        }
+
+        input[type="submit"]:hover {
+
+            font-size: 1rem;
+            box-sizing: border-box;
+            background-color: rgb(107, 169, 96);
+            transition: all 1s ease;
+        }
+
+    }
+
+    button {
+        font-size: 1rem;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 5px;
+    }
+
+
+
+
+    button:nth-child(1) {
+        background-color: rgb(113, 214, 150);
+    }
+
+    button:nth-child(2) {
+        background-color: rgb(205, 159, 221);
+    }
+
+    button:nth-child(3) {
+        background-color: rgb(223, 213, 141);
+    }
+
+
+}
+
+
+.destinations {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+        flex-basis: 25%;
+        box-sizing: border-box;
+        padding: 10px;
+        position: relative;
+        width: 300px;
+        height: 200px;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        div {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 10px;
+            color: white;
+        
+        }
+
+    }
+}
